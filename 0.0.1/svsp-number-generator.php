@@ -98,6 +98,7 @@ function random($numlet, $fn, $mn = null, $mx = null) {
 		else $substr = substr($summ, $strt, $numlet);
 		if(str_split($substr)[0] == '0') $substr = rand(1, 9).substr($substr, 1);
 		$substr = bcadd($substr, 1);
+	    return $substr;
 	} else {
 		if(count(str_split($mx)) > $numlet or $numlet > count(str_split($mx))) {
 			return 'false';
