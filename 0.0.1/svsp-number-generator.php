@@ -126,7 +126,6 @@ function random($numlet, $fn, $mn = null, $mx = null) {
 		}
 		$substr = bcadd($substr, 1);
 		return $substr;
-		exit(0);
 	}
 
 }
